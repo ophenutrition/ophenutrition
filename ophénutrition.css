@@ -1,0 +1,210 @@
+header{
+    background-color: rgba(146, 214, 146, 0.534);
+    border-bottom: 15px solid rgba(69, 133, 69, 0.637);
+    border-top: 15px double rgba(69, 133, 69, 0.637 );
+}
+body{
+    background-image:url(fleur_jaune.jpg) ;
+    background-size: cover;
+    background-position:center;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+a{
+    text-decoration: underline;
+    color: inherit;
+}
+h1{
+    color: rgb(1, 77, 1);
+    font-size:  clamp(4rem, 8vw, 7rem); /* s’adapte à l’écran */
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 100px;
+    text-align: center;
+}
+.bannercontacte{
+    color: rgb(0, 88, 0);
+    text-align: right;
+    font-size: 1.5em;
+    margin: 10px 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.logo{
+    text-align: right;
+    margin: 20px 85px 0 0;
+}
+.banner1{
+    color:rgb(1, 77, 1) ;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: bold;
+    margin-bottom: 100px;
+}
+.banner2{
+    color:rgb(1, 77, 1) ;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 50px;
+}
+.bulle1 , .bulle2 , .bulle3{
+    background-color: rgba(113, 218, 113, 0.425);
+    border: 5px solid rgba(69, 133, 69, 0.637);;
+    border-radius: 50%;
+    width: min(80vw, 350px);
+    height: min(80vw, 350px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+h2{
+    color:rgb(1, 77, 1) ;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+h3{
+    color:rgb(1, 77, 1) ;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h4{
+    color:rgb(1, 77, 1) ;
+    font-size: 2.1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+.grille1, .grille2, .grille3{
+    display: flex;
+    gap: 70px;
+    margin: 200px 200px;
+}
+.paragraphe1, .paragraphe2, .paragraphe3{
+    font-size: 1.5em;
+    text-align: justify;
+    margin-right: 1vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(1, 77, 1) ;
+    
+
+}
+@media screen and (max-width: 1400px) {
+    h1 {
+        font-size: clamp(3rem, 7vw, 6rem);
+    }
+    .banner1 {
+        font-size: 2rem;
+    }
+
+    .banner2 {
+        font-size: 1.5rem;
+    }
+
+    .bulle1, .bulle2, .bulle3 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .bulle1 h2, .bulle2 h3, .bulle3 h4 {
+        font-size: 1.5em;
+    }
+
+    .grille1, .grille2, .grille3 {
+        margin: 10rem 6vh 3vw ;
+        gap: 3vw;
+    }
+    .paragraphe1, .paragraphe2, .paragraphe3 {
+        font-size: 20px;
+        margin-top: 0rem;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 5em;
+        margin-top: 100px;
+    }
+
+    .banner1 {
+        font-size: 2em;
+    }
+
+    .banner2 {
+        font-size: 1.5em;
+    }
+
+    .grille1, .grille2, .grille3 {
+        flex-direction: column;
+        gap: 30px;
+        margin: 50px 20px;
+    }
+
+    .bulle1, .bulle2, .bulle3 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .bulle1 h2, .bulle2 h3, .bulle3 h4 {
+        font-size: 1.5em;
+    }
+
+    .paragraphe1, .paragraphe2, .paragraphe3 {
+        font-size: 20px;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .bannercontacte {
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    .logo {
+        text-align: center;
+        margin: 10px auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .banner1 {
+        font-size: 1.5em;
+    }
+
+    .banner2 {
+        font-size: 1.2em;
+    }
+
+    .bulle1, .bulle2, .bulle3 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .bulle1 h2, .bulle2 h3, .bulle3 h4 {
+        font-size: 1.2em;
+    }
+
+    .paragraphe1, .paragraphe2, .paragraphe3 {
+        font-size: 1em;
+        padding: 0 10px;
+        margin-right: 0;
+    }
+
+    .bannercontacte {
+        font-size: 1.2em;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .logo img {
+        width: 120px;
+        height: auto;
+    }
+}

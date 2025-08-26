@@ -1,0 +1,207 @@
+body{
+    background-image: url(fleur_jaune_droite.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.liens{
+    color: rgb(1, 77, 1);
+    text-align: right;
+    font-size: 1.5em;
+    margin: 10px 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.contact1{
+    margin-top:20px ;
+    margin-bottom: 10px;
+    
+}
+a{
+    text-decoration: underline;
+    color: inherit;
+}
+.contact2{
+    margin-bottom: 10px;
+}
+h1{
+    color:rgb(1, 77, 1) ;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+.grille{
+    display: flex;
+    gap: 70px;
+    margin:300px 100px ;
+}
+.bulle {
+    background-color: rgba(113, 218, 113, 0.425);
+    border: 5px solid rgba(69, 133, 69, 0.637);;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+}
+.paragraphe{
+    font-size: 1.5em;
+    margin-right: 200px;
+    text-align: justify;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(1, 77, 1) ;
+}
+caption{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    margin-top: 100px;
+    
+}
+td , th{
+    border: 2px solid rgb(2, 87, 37);
+    padding: 20px;
+    background-color: rgba(113, 218, 113, 0.425);
+}
+
+table{
+    color:rgb(3, 66, 3) ;
+    border-collapse: collapse;
+    caption-side: top center;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+footer{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    background-color: rgba(146, 214, 146, 0.534);
+    border-bottom: 15px solid rgba(69, 133, 69, 0.637);
+    border-top: 15px double rgba(69, 133, 69, 0.637 );
+}
+footer {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.diplome {
+    position: relative;
+}
+
+.diplome-miniature {
+    width: 100px;
+    height: auto;
+    border: 1px solid #004400;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.diplome-miniature:hover {
+    transform: scale(2.5);
+    z-index: 10;
+}
+@media screen and (max-width: 1400px) {
+   .grille{
+        flex-direction: column;
+        gap: 30px;
+        margin: 10rem 70px 20px;
+    }
+    .bulle{
+        width: 250px;
+        height: 250px;
+        margin: 0;
+    }
+
+    .bulle, h1{
+       font-size: 1.5em;
+    }
+
+    .paragraphe{
+        font-size: 1.2em;
+        margin: 0;
+    }
+
+    .liens {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    th, td{
+        border: 1px solid rgb(2, 87, 37);
+        padding: 10px;
+    }
+    footer{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .grille{
+        flex-direction: column;
+        gap: 30px;
+        margin: 70px 20px;
+    }
+    .bulle{
+        width: 250px;
+        height: 250px;
+        margin: 0;
+    }
+
+    .bulle, h1{
+       font-size: 1.5em;
+    }
+
+    .paragraphe{
+        font-size: 1.2em;
+        margin: 0;
+    }
+
+    .liens {
+        font-size: 1em;
+        text-align: center;
+    }
+    th, td{
+        border: 1px solid rgb(2, 87, 37);
+        padding: 10px;
+    }
+    footer{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bulle{
+        width: 200px;
+        height: 200px;
+        margin: 0;
+    }
+
+    .bulle, h1{
+        font-size: 1.2em;
+    }
+
+    .paragraphe {
+        font-size: 1em;
+        padding: 0 10px;
+        margin: 0;
+    }
+    .liens {
+        font-size: 1em;
+        text-align: center;
+    }
+    th, td{
+        border: 1px solid rgb(2, 87, 37);
+        padding: 10px;
+    }
+    footer{
+        font-size: 16px;
+    }
+}
